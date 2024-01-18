@@ -4,7 +4,7 @@
   "description": "My portfolio website... 💻🐱‍👤",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -w"
   },
   "keywords": [],
   "author": "Valvrauu",
