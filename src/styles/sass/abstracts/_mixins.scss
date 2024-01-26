@@ -1,0 +1,11 @@
+$mq-small:   18.75em; /* 300px */
+$mq-medium:  37.5em; /* 600px */
+$mq-large:   56.25em; /* 900px */
+$mq-largest: 75em; /* 1200px */
+
+@mixin mq($size) {
+  @if      $size == small  { @media only screen and (min-width: $mq-small) { @content; } }
+  @else if $size == medium { @media only screen and (min-width: $mq-medium) { @content; } }
+  @else if $size == large  { @media only screen and (min-width: $mq-large) { @content; } }
+  @else if $size == largest { @media only screen and (min-width: $mq-largest) { @content; } }
+}
