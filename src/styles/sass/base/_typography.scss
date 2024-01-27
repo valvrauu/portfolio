@@ -6,3 +6,11 @@
     @include mq(medium) { font-size: 3.8rem; }
     @include mq(largest) { font-size: 5.4rem; }
 }
+
+.paragraph {
+    font-size: var(--fs-sm);
+    line-height: 1.5;
+
+    @include mq(medium) { font-size: var(--fs-base); }
+    @include mq(largest) { font-size: var(--fs-md); }
+}
