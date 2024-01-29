@@ -1,0 +1,63 @@
+.block-intro {
+    display: grid;
+    align-items: center;
+    gap: 3rem;
+
+    margin: auto;
+    max-width: 120rem;
+    padding: 3rem 0;
+
+    @include mq(medium) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15rem;
+    }
+
+    @include mq(large) { padding: 0 5rem; }
+    @include mq(largest) { margin-top: 20rem; }
+
+    &__about-box {
+        display: grid;
+        gap: 2rem;
+
+        @include mq(medium) { gap: 4rem; }
+    }
+
+    &__primary-title {
+        text-align: center;
+
+        @include mq(medium) { text-align: left; }
+    }
+
+    &__title-name {
+        display: inline-block;
+
+        @include mq(medium) {
+            display: block;
+            transform: translateX(3rem);
+        }
+    }
+
+    &__group-texts {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    &__paragraph {
+        padding-left: 8px;
+        border-left: 2px solid var(--clr-primary-200);
+    }
+
+    &__illustration {
+        display: block;
+
+        margin: auto;
+        max-width: 30rem;
+        width: 100%;
+
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+
+        @include mq(medium) { max-width: 45rem; }
+    }
+}

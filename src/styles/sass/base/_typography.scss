@@ -7,6 +7,15 @@
     @include mq(largest) { font-size: 5.4rem; }
 }
 
+.secondary-title {
+    font-size: 2.4rem;
+    font-weight: var(--fw-bold);
+    line-height: 1.25;
+
+    @include mq(medium) { font-size: 3.2rem; }
+    @include mq(largest) { font-size: 4.2rem; }
+}
+
 .paragraph {
     font-size: var(--fs-sm);
     line-height: 1.5;
