@@ -1,0 +1,22 @@
+html {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    padding: 1.8rem 1.6rem;
+
+    background: var(--clr-ntrl-min);
+    font-family: var(--ff-primary);
+
+    @include mq(medium) {
+        padding: 3.8rem;
+    }
+
+    @include mq(largest) {
+        padding: 3.8rem 7.2rem;
+    }
+}
