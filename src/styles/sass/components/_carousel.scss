@@ -1,0 +1,42 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    overflow: hidden;
+
+    &__box-items {
+        display: flex;
+        gap: 1.5rem;
+
+        overflow: auto;
+        transition: transform 500ms;
+
+        @include mq(medium) { gap: 3rem; }
+    }
+
+    &__item {
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    &__box-btns {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+
+        @include mq(large) { gap: 1.6rem; }
+    }
+
+    &__btn {
+        width: 5.2rem;
+        height: 5.2rem;
+
+        border-radius: 50%;
+
+        @include mq(large) {
+            width: 6.4rem;
+            height: 6.4rem;
+        }
+    }
+}
