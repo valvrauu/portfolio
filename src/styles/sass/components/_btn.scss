@@ -1,0 +1,19 @@
+.btn {
+    text-decoration: none;
+
+    border: 0;
+    cursor: pointer;
+
+    &--primary {
+        color: var(--clr-ntrl-min);
+        background: var(--clr-ntrl-max);
+
+        transition: 
+            background-color 250ms;
+
+        &:hover,
+        &:focus-visible {
+            background: var(--clr-primary-200);
+        }
+    }
+}
