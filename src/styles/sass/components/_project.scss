@@ -1,0 +1,66 @@
+.project {
+    position: relative;
+    width: 27rem;
+
+    @include mq(medium) { width: 36rem; }
+    @include mq(large) { width: 45rem; }
+    @include mq(largest) { width: 54rem; }
+
+    cursor: help;
+    overflow: hidden;
+
+    &:hover &__details {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__details {
+        position: absolute;
+        inset: auto 0 0 0;
+
+        display: grid;
+
+        padding: 1rem;
+
+        color: var(--clr-ntrl-min);
+        background: var(--clr-primary-200);
+
+        font-size: var(--fs-sm);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50%);
+
+        transition: 
+            opacity 500ms,
+            visibility 500ms,
+            transform 500ms;
+
+        @include mq(medium) { font-size: var(--fs-base); }
+        @include mq(largest) { font-size: var(--fs-lg); padding: 2rem; }
+    }
+
+    &__name {
+        font-weight: var(--fw-bol);
+    }
+
+    &__link {
+        max-width: 35ch;
+
+        color: inherit;
+        transition: opacity 250ms;
+
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+
+        overflow: hidden;
+
+        &:hover { opacity: .75; }
+    }
+}
