@@ -1,0 +1,28 @@
+.block-projects {    
+    display: grid;
+    justify-items: center;
+    gap: 1.5rem;
+
+    position: relative;
+    left: -1.6rem;
+
+    margin-top: 4rem;
+    width: calc(100% + 3.2rem);
+
+    overflow: hidden;
+
+    @include mq(medium) {
+        gap: 3rem;
+        left: -3.8rem;
+
+        margin-top: 8rem;
+        width: calc(100% + 7.6rem);
+    }
+
+    @include mq(largest) {
+        left: -7.2rem;
+
+        margin-top: 12rem;
+        width: calc(100% + 14.4rem);
+    }
+}
