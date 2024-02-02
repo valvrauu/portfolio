@@ -1,0 +1,68 @@
+.block-contact {
+    display: grid;
+    gap: 2rem;
+
+    margin: auto;
+    margin-top: 4rem;
+    max-width: 120rem;
+
+    font-size: var(--fs-xs);
+
+    @include mq(medium) {
+        margin-top: 8rem;
+        font-size: var(--fs-sm);
+    }
+
+    @include mq(large) {
+        padding: 0 5rem;
+    }
+
+    @include mq(largest) {
+        margin-top: 12rem;
+        font-size: var(--fs-base);
+    }
+
+    &__box {
+        @include mq(large) {
+            display: flex;
+            gap: 4rem;
+        }
+    }
+
+    &__form {
+        margin: auto;
+        max-width: 40rem;
+        width: 100%;
+
+        @include mq(medium) { max-width: 50rem; }
+    }
+
+    &__secondary-title {
+        text-align: center;
+    }
+
+    &__illustration-box {
+        margin: 2rem auto 0;
+        max-width: 35rem;
+
+        @include mq(medium) {
+            margin: 4rem 0 0 auto;
+            max-width: 40rem;
+        }
+
+        @include mq(large) {
+            margin: auto 0 0 0;
+            transform: translateY(20%);
+        }
+
+        @include mq(largest) { max-width: 48rem; }
+    }
+
+    &__illustration {
+        display: block;
+        width: 100%;
+
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}

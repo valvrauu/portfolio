@@ -16,6 +16,15 @@
     @include mq(largest) { font-size: 4.2rem; }
 }
 
+.tertiary-title {
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    line-height: 1.25;
+
+    @include mq(medium) { font-size: 2.8rem; }
+    @include mq(largest) { font-size: 3.4rem; }
+}
+
 .paragraph {
     font-size: var(--fs-sm);
     line-height: 1.5;
