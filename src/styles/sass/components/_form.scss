@@ -1,0 +1,55 @@
+.form {
+    display: grid;
+    gap: 1.5rem;
+
+    &__section {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    &__tertiary-title {
+        text-align: center;
+    }
+
+    &__field {
+        display: grid;
+    }
+
+    &__label {
+        color: var(--clr-primary-200);
+
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-bold);
+
+        &--error {
+            color: var(--clr-error);
+        }
+
+        @include mq(medium) { font-size: var(--fs-base); } 
+    }
+
+    &__input,
+    &__textarea {
+        border: 1px solid var(--clr-ntrl-mid);
+        padding: 1rem;
+        width: 100%;
+
+        color: rgba(0, 0, 0, 0.75);
+
+        font-size: var(--fs-xs);
+        font-weight: var(--fw-bold);
+        font-family: var(--ff-primary);
+
+        &--error {
+            border: 1px solid var(--clr-error);
+        }
+    }
+
+    &__textarea {
+        resize: none;
+    }
+
+    &__btn {
+        padding: 1rem;
+    }
+}
