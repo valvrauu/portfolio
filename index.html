@@ -368,6 +368,91 @@
             </div>
         </section>
 
+        <section class="block-contact">
+            <h2 class="secondary-title block-contact__secondary-title">Contact</h2>
+
+            <div class="block-contact__box">
+                <form action="#" method="post" autocomplete="on" class="form block-contact__form">                    
+                    <section class="form__section">
+                        <p class="form__field">
+                            <label for="userFullName" class="form__label">
+                                <span class="form__label-text">Full Name: </span>
+                                <strong><span aria-label="required" class="form__required-symbol">*</span></strong>
+                            </label>
+
+                            <input 
+                                type="text" 
+                                name="userFullName" 
+                                id="userFullName" 
+                                class="form__input" 
+                                placeholder="e.g. Ashley Miller" 
+                            >
+                        </p>
+
+                        <p class="form__field">
+                            <label for="userEmail" class="form__label">
+                                <span class="form__label-text">Email: </span>
+                                <strong><span aria-label="required" class="form__required-symbol">*</span></strong>
+                            </label>
+
+                            <input 
+                                type="email" 
+                                name="userEmail" 
+                                id="userEmail" 
+                                class="form__input" 
+                                placeholder="e.g. Ashley@gmail.com" 
+                            >
+                        </p>
+
+                        <p class="form__field">
+                            <label for="userSubject" class="form__label">
+                                <span class="form__label-text">Subject: </span>
+                                <strong><span aria-label="required" class="form__required-symbol">*</span></strong>
+                            </label>
+
+                            <input 
+                                type="text" 
+                                name="userSubject" 
+                                id="userSubject" 
+                                class="form__input" 
+                                placeholder="e.g. Job opportunity, Freelance project" 
+                            >
+                        </p>
+
+                        <p class="form__field">
+                            <label for="userMessage" class="form__label">
+                                <span class="form__label-text">Message: </span>
+                                <strong><span aria-label="required" class="form__required-symbol">*</span></strong>
+                            </label>
+
+                            <textarea 
+                                name="userMessage" 
+                                id="userMessage" 
+                                class="form__textarea" 
+                                cols="30" 
+                                rows="10" 
+                                maxlength="500" 
+                            ></textarea>
+                        </p>
+                    </section>
+
+                    <section class="form__section">
+                        <p class="form__field">
+                            <button type="submit" class="btn btn--primary form__btn">Submit</button>
+                        </p>
+                    </section>
+                </form>
+
+                <div class="block-contact__illustration-box">
+                    <img 
+                        src="./src/assets/imgs/contact.png" 
+                        alt=""
+                        class="block-contact__illustration"
+                    >
+                </div>
+            </div>
+        </section>
+
         <script src="./public/js/bundle.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
