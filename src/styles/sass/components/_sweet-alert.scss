@@ -1,0 +1,8 @@
+.swal2 {    
+    &-popup {
+        font-size: var(--fs-xs) !important;
+
+        @include mq(medium) { font-size: var(--fs-sm) !important; }
+        @include mq(largest) { font-size: var(--fs-base) !important; }
+    }
+}
