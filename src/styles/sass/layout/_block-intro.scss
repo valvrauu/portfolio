@@ -4,8 +4,8 @@
     gap: 3rem;
 
     margin: auto;
+    margin-top: 10rem;
     max-width: 120rem;
-    padding: 3rem 0;
 
     @include mq(medium) {
         grid-template-columns: repeat(2, 1fr);
