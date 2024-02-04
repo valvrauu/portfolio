@@ -25,3 +25,16 @@ body {
     color: var(--clr-ntrl-min);
     background: var(--clr-primary-200);
 }
+
+::-webkit-scrollbar {
+    display: block;
+    width: 1rem;
+
+    @include mq(medium) { width: 1.2rem; }
+    @include mq(largest) { width: 1.4rem; }
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-primary-200);
+    border-radius: 5px;
+}
