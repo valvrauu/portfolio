@@ -43,6 +43,7 @@
         background: var(--clr-ntrl-min);
 
         transform: translateY(-100%);
+        transition: transform 750ms;
 
         @include mq(medium) {
             display: contents;
@@ -88,6 +89,9 @@
             height: 2px;
 
             transform: translateY(0);
+            transition:
+                background-color 300ms 1250ms,
+                transform 300ms 850ms;
 
             @include mq(medium) {
                 display: none;
